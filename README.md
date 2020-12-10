@@ -1,7 +1,7 @@
 # Pedro Retweet Bot
-> Descrição
+  > Descrição
 
-![imagem]()
+  ![imagem]()
 
 ##Funcionamento
 
