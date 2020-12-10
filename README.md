@@ -3,5 +3,3 @@
 
   ![imagem]()
 
-##Funcionamento
-
