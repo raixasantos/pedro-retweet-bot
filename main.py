@@ -10,6 +10,11 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 busca = 'pedro'
 
 
+numeroDeTweets = 100
+
+buscados = []
+
+
 dic = {'lindo':'lindezas', 'feio':'feiuras', 'louco':'loucuras', ' piada':'piadas', 'estudo':'estudos','estuda':'estudos','namoro':'namoros','namora':'namoros',' amo o':'amores',' amor ':'amores','te amo':'amores','confusao':'confusões','chorar':'choros',' força ':'forças', ' teste ':'testes','aprendendo':'aprendizados'}
 
 
@@ -21,10 +26,6 @@ def semOutrasLinguas(textoTweet, dicionario):
       return False
     else:
       return True
-
-buscados = []
-
-numeroDeTweets = 100
 
 for tweet in tweepy.Cursor(api.search, busca).items(numeroDeTweets):
     
